@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header';
+import './Work';
 
 const Work = () => {
   return (
