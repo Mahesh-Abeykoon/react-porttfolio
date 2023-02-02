@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src={images.logo} alt="logo" />
        </div>
        <ul>
-        {['home','about', 'çontact','work','skills','contact'].map((item)=>(
+        {['home','about','work','skills','contact'].map((item)=>(
           <li key={`link-${item}`}>
             <div/>
             <a href={`#${item}`}>{item}</a>
