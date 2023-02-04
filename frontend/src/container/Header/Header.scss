@@ -123,8 +123,8 @@
   
     div:nth-child(2) {
       margin: 1.75rem;
-      width: 150px;
-      height: 150px;
+      width: 130px;
+      height: 130px;
     }
   
     div:nth-child(3) {
@@ -133,15 +133,24 @@
     }
   
     div:nth-child(4) {
-      width: 140px;
-      height: 140px;
+      width: 120px;
+      height: 120px;
     }
   
     div:nth-child(5) {
       width: 90px;
       height: 90px;
     }
-  
+
+    div:nth-child(6) {
+      width: 80px;
+      height: 80px;
+    }
+
+    div:nth-child(7) {
+      width: 100px;
+      height: 100px;
+    }
   
     @media screen and (max-width: 1200px) {
       width: 100%;
