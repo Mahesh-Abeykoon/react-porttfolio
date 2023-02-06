@@ -12,5 +12,10 @@ import mypic from '../assets/mypic.jpg';
 import firebase from '../assets/firebase.png';
 import git from '../assets/git.png';
 
+import about1 from '../assets/about_pic1.png';
+import about2 from '../assets/about_pic2.png';
+import about3 from '../assets/about_pic3.png';
+import about4 from '../assets/about_pic4.png';
 
-export default {logo, backgroundPic, circle, java, react, sass, spring_boot,android, mypic, firebase, git};
+
+export default {logo, backgroundPic, circle, java, react, sass, spring_boot,android, mypic, firebase, git, about1, about2, about3, about4};
