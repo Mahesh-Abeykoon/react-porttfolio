@@ -1,3 +1,4 @@
 // schemas/index.js
+import about from './about'
 
-export const schemaTypes = []
+export const schemaTypes = [about]
