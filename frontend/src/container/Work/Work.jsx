@@ -14,9 +14,7 @@ const Work = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
 
-  const handleWorkFilter = (item) => {
-  }
-
+  
   useEffect(() => {
     const query = '*[_type == "works"]';
 
@@ -26,12 +24,16 @@ const Work = () => {
     });
   }, []);
 
+  const handleWorkFilter = (item) => {
+
+  }
+
   return (
-<>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+  <>
+      <h2 className="head-text">My <span>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['Web App', 'Mobile App', 'Unity Game', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
