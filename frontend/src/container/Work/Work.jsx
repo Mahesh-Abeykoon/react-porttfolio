@@ -5,7 +5,7 @@ import { urlFor, client } from '../../client';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { AppWrap, MotionWrap } from '../../wrapper';
 
-import './Work';
+import './Work.scss';
 
 const Work = () => {
 
