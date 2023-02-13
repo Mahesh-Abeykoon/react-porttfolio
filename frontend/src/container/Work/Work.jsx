@@ -16,7 +16,7 @@ const Work = () => {
 
   
   useEffect(() => {
-    const query = '*[_type == "works"]';
+    const query = '*[_type == "work"]';
 
     client.fetch(query).then((data) => {
       setWorks(data);
@@ -25,8 +25,19 @@ const Work = () => {
   }, []);
 
   const handleWorkFilter = (item) => {
+    setActiveFilter(item);
+    setAnimateCard([{ y: 100, opacity: 0 }]);
 
-  }
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+
+      if (item === 'All') {
+        setFilterWork(works);
+      } else {
+        setFilterWork(works.filter((work) => work.tags.includes(item)));
+      }
+    }, 500);
+  };
 
   return (
   <>
